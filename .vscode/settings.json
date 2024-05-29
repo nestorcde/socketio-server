@@ -2,5 +2,7 @@
     "appService.zipIgnorePattern": [
         "node_modules{,/**}",
         ".vscode{,/**}"
-    ]
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/9c4df4ac-04f4-4603-a9dc-af98d8925409/resourceGroups/socketServer/providers/Microsoft.Web/sites/socketio-server",
+    "appService.deploySubpath": "."
 }
