@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-
+require('dotenv').config();
 
 const socketio = require('socket.io');
 const e = require('express');
@@ -23,9 +23,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 
-var server = app.listen(3000,()=>{
-    console.log('Server is running')
-})
+var server = app.listen(process.env.PORT || 3000, () => {
+    console.log(`Server is running on port ${server.address().port}`);
+});
 
 
 //Chat Server
